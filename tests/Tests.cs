@@ -39,5 +39,24 @@ namespace syntaxApp.tests
 
             Console.WriteLine(upgradedGun.GetName());
         }
+
+        public static void TestStrategy()
+        {
+            // Using Strategy 1: FedEx Shipping
+
+            IShippingStrategy FedEx = new FedExShipping();
+
+            ShippingService shipService = new ShippingService(50.25, FedEx);
+
+            Console.WriteLine($"[Using FedEx] <Cost> -> [{shipService.CalculateShippingCosts(100)}]");
+
+            // Using Strategy 2: DHL Shipping
+
+            IShippingStrategy Dhl = new DHLShipping();
+
+            shipService.SetShippingStrategy(Dhl);
+
+            Console.WriteLine($"[Using Dhl] <Cost> -> [{shipService.CalculateShippingCosts(100)}]");
+        }
     }
 }

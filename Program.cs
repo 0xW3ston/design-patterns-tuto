@@ -4,7 +4,8 @@ class Program
     static void Main()
     {
         //Tests.TestSingleton();
-        Tests.TestDecorator();
+        //Tests.TestDecorator();
+        Tests.TestStrategy();
 
     }
 }
