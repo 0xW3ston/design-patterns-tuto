@@ -85,5 +85,13 @@ namespace syntaxApp.tests
 
         }
 
+        public static void TestFacade()
+        {
+            HomeAutomationFacade homeSystem = new HomeAutomationFacade();
+
+            homeSystem.EnterHome();
+
+            homeSystem.LeaveHome();
+        }
     }
 }
