@@ -3,7 +3,8 @@ class Program
 {
     static void Main()
     {
-        Tests.TestSingleton();
+        //Tests.TestSingleton();
+        Tests.TestDecorator();
 
     }
 }
