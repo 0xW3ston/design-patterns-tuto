@@ -58,5 +58,32 @@ namespace syntaxApp.tests
 
             Console.WriteLine($"[Using Dhl] <Cost> -> [{shipService.CalculateShippingCosts(100)}]");
         }
+
+        public static void TestObserver()
+        {
+            var notificationSubject = new NotificationSubject();
+
+            UserObserver user1 = new UserObserver();
+            UserObserver user2 = new UserObserver();
+
+            notificationSubject.AddObserver(user1);
+            notificationSubject.AddObserver(user2);
+
+            notificationSubject.setNewMsg("Hello All");
+        }
+
+        public static void TestFactory()
+        {
+            IVehicleFactory carFactory = new CarFactory();
+            IVehicleFactory planeFactory = new PlaneFactory();
+
+            IVehicle newCar = carFactory.CreateVehicle();
+            IVehicle newPlane = planeFactory.CreateVehicle();
+
+            newCar.printVehiculeDescription();
+            newPlane.printVehiculeDescription();
+
+        }
+
     }
 }

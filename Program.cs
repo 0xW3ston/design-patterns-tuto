@@ -6,7 +6,8 @@ class Program
         //Tests.TestSingleton();
         //Tests.TestDecorator();
         //Tests.TestStrategy();
-        Tests.TestObserver();
+        //Tests.TestObserver();
+        Tests.TestFactory();
 
     }
 }
