@@ -9,7 +9,8 @@ class Program
         //Tests.TestObserver();
         //Tests.TestFactory();
         //Tests.TestFacade();
-        Tests.TestAdapter();
+        //Tests.TestAdapter();
+        Tests.TestProxy();
 
     }
 }

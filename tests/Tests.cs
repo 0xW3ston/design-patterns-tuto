@@ -5,7 +5,7 @@ using syntaxApp.Patterns.Observer;
 using syntaxApp.Patterns.Factory;
 using syntaxApp.Patterns.Facade;
 using syntaxApp.Patterns.Adapter;
-
+using syntaxApp.Patterns.Proxy;
 
 namespace syntaxApp.tests
 {
@@ -105,6 +105,13 @@ namespace syntaxApp.tests
             logger.LogInfo("Mary Poppins");
 
             logger.LogError("Evil Knievel");
+        }
+
+        public static void TestProxy()
+        {
+            ProxyImage image = new ProxyImage("/c/Users/user1/documents/lol.png");
+
+            image.Display();
         }
     }
 }
