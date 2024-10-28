@@ -5,7 +5,8 @@ class Program
     {
         //Tests.TestSingleton();
         //Tests.TestDecorator();
-        Tests.TestStrategy();
+        //Tests.TestStrategy();
+        Tests.TestObserver();
 
     }
 }
