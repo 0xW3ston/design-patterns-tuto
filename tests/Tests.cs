@@ -93,5 +93,18 @@ namespace syntaxApp.tests
 
             homeSystem.LeaveHome();
         }
+
+        public static void TestAdapter()
+        {
+            LegacyLogger legacyLogger = new LegacyLogger();
+
+            LegacyLoggerAdapter logger = new LegacyLoggerAdapter(legacyLogger);
+
+            logger.LogInfo("Gran Turismo 4 Arcade theme is goated");
+
+            logger.LogInfo("Mary Poppins");
+
+            logger.LogError("Evil Knievel");
+        }
     }
 }

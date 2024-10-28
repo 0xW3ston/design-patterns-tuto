@@ -8,7 +8,8 @@ class Program
         //Tests.TestStrategy();
         //Tests.TestObserver();
         //Tests.TestFactory();
-        Tests.TestFacade();
+        //Tests.TestFacade();
+        Tests.TestAdapter();
 
     }
 }
